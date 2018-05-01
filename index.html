@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mohammed Shajib</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- P5 libraries -->
+    <script language="javascript" type="text/javascript" src="libraries/p5/p5.js"></script>
+
+    <!-- A-Frame libraries -->
+    <script language="javascript" type="text/javascript" src="libraries/p5/aframe.min.js"></script>
+
+    <!-- AFrameP5 library -->
+    <script language="javascript" type="text/javascript" src="libraries/p5/aframep5.js"></script>
+
+    <!-- P5 Sketch -->
+    <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+/*        padding-top: 54px;*/
+          padding: 0;
+            margin: 0;
+      }
+      @media (min-width: 992px) {
+        body {
+/*          padding-top: 56px;*/
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Mohammed Shajib</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+<!--
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+-->
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+<!--
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Mohammed E H Shajib</h1>
+          <p class="lead">Portfolio Work In Progress! [Home]</p>
+
+        </div>
+      </div>
+    </div>
+-->
+    		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+	    	<!--
+		       The 'a-assets' container is used to load in any external artwork you may want to use as "textures" for your objects.
+		       Ensure that this element has an ID of 'VRAssets'
+
+		       Textures can be loaded by creating a new 'a-asset' tag inside of the 'a-assets' container.
+		       When doing this you will need to make sure to give your textures a unique ID -
+		       this will be used by p5 to create new objects.
+
+		       Example:
+
+		       <img id="ITEM_ID_GOES_HERE" src="images/gold_block.png">
+			-->
+
+        <a-assets id="VRAssets">
+            <img src="images/sun.jpg" id="sun">
+            <img src="images/venus.jpg" id="venus">
+            <img src="images/earth.jpg" id="earth">
+            <img src="images/stars.jpg" id="stars">
+
+            <img src="images/worktext.png" id="workT">
+            <img src="images/green.png" id="green">
+            <img src="images/work2.png" id="work2">
+            <img src="images/work3.png" id="work3">
+            <img src="images/work4.png" id="work4">
+        </a-assets>
+
+            <!--background-->
+			<a-sky src="#stars"></a-sky>
+
+	    </a-scene>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="libraries/jquery/jquery.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
